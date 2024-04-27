@@ -1,0 +1,11 @@
+.docs {}
+
+.docs-usage {
+    background-color: #595e67;
+    color: white;
+    width: 500px;
+    padding: 20px;
+    font-family: 'Fira Code', 'Consolas', monospace;
+}
+
+.docs-about {}
