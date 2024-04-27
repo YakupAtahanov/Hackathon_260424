@@ -1,9 +1,9 @@
 import React from 'react'
-import logo from "../../../assets/logo.png"
-import demoPng from "../../../assets/demo.png"
-import aboutPng from "../../../assets/about.png"
-import commentPng from "../../../assets/comment.png"
-import editPng from "../../../assets/edit.png"
+import logo from "../../assets/logo.png"
+import demoPng from "../../assets/demo.png"
+import aboutPng from "../../assets/about.png"
+import commentPng from "../../assets/comment.png"
+import editPng from "../../assets/edit.png"
 import "./Navbar.css"
 
 const Navbar = () => {
