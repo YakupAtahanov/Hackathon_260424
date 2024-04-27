@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 25px;
+    border: solid 3px white;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 63px;
+    height: 58px;
+    margin-right: 6px;
+}
+
+.header-title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar>div {
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.header-demo img {
+    width: 32px;
+    margin-top: 5px;
+    height: 27px;
+}
+
+.header-about img {
+    width: 23px;
+    height: 29px;
+}
+
+.header-contact img {
+    width: 32px;
+    height: 32px;
+}
+
+.header-navbar-title {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.header-auth {
+    display: flex;
+    column-gap: 8px;
+}
+
+.header-auth button {
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header-auth button:hover {
+    transition: all .3s ease-in-out;
+    background-color: #fff;
+    color: #000;
+}
+
+.header-auth img {
+    height: 22px;
+}
+
+@media (max-width: 768px) {
+    
+}
