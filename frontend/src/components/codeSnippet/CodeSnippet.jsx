@@ -5,7 +5,7 @@ import "./CodeSnippet.css"
 
 const CodeSnippet = ({ codeString }) => {
     return (
-        <div className='text'>
+        <div>
             <SyntaxHighlighter language="python" style={oneDark}>
                 {codeString}
             </SyntaxHighlighter>
