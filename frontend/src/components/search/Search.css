@@ -21,13 +21,14 @@
     background-color: transparent;
     border: solid 3px white;
     border-radius: 22px;
+    color: aqua;
 }
 
 .searchInput {
     width: 100%;
     background-color: transparent;
     font-size: 40px;
-    color: white;
+    color: aqua;
     padding: 19px 30px 19px 30px;
 }
 
@@ -41,3 +42,41 @@
     font-size: 22px;
 }
 
+.searchSelect {
+    width: 100%; /* Match the full width of its container */
+    height: 55px; /* Adjust the height to fit within the searchborder div */
+    background-color: transparent;
+    color: aqua;
+    font-size: 18px; /* Adjust the font-size as necessary */
+    border: none;
+    padding: 10px 20px; /* Adjust padding to align text within the dropdown */
+    appearance: none; /* Remove default styling */
+    cursor: pointer;
+}
+
+.searchSelect:focus {
+    outline: none;
+}
+
+.searchborder {
+    position: relative; /* Make the position of searchborder relative for the arrow */
+}
+
+.searchborder::after {
+    content: '';
+    position: absolute;
+    right: 20px; /* Adjust to align the arrow within the searchborder */
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid white;
+    border-width: 0 3px 3px 0; /* Adjust these values to change the size of the arrow */
+    padding: 5px; /* Adjust the size of the arrow */
+    pointer-events: none; /* Make sure clicks pass through to the select element */
+    transform: translateY(-50%) rotate(45deg);
+}
+
+/* Adjust the submit button */
+.research-btn {
+    height: 91px; /* Match the height of the dropdown */
+    padding: 0 30px; /* Adjust padding to your liking */
+}

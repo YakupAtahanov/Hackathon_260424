@@ -4,11 +4,11 @@ import './FrameworkSearch.css'
 import Search from '../search/Search'
 
 const FrameworkSearch = () => {
-  return (
-    <div className='search-container'>
-        <Search></Search>
-    </div>
-  )
+    return (
+        <div className='search-container'>
+            <Search></Search>
+        </div>
+    )
 }
 
 export default FrameworkSearch

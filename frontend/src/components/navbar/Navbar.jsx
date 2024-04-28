@@ -4,11 +4,14 @@ import demoPng from "../../assets/demo.png"
 import aboutPng from "../../assets/about.png"
 import commentPng from "../../assets/comment.png"
 import editPng from "../../assets/edit.png"
+import { useNavigate } from 'react-router-dom'
 import "./Navbar.css"
 
 const Navbar = () => {
+    const navigate = useNavigate()
+
     return (
-        <header className='header'>
+        <header className='header' onClick={() => navigate("/")}>
             <div className='header-logo'>
                 <img src={logo} alt="img" />
                 <h2 className='header-title'>Docster AI</h2>
