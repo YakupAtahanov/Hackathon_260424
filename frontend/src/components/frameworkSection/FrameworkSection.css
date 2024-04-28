@@ -1,0 +1,17 @@
+.framework-section-container {
+    height: 100%;
+    width: 20%;
+    border: solid 3px white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section {
+    border-top-left-radius: 13px;
+}
+
+.last-section {
+    border-top-right-radius: 13px;
+}
