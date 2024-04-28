@@ -1,11 +1,89 @@
-.docs {}
+/* @keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+} */
+
+.docs {
+    display: flex;
+    gap: 90px;
+    margin-top: 40px;
+}
+
+.docs-code-snippet {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
 .docs-usage {
     background-color: #595e67;
+    display: inline-block;
     color: white;
-    width: 500px;
-    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+    padding: 8px 18px;
+    line-height: 22px;
     font-family: 'Fira Code', 'Consolas', monospace;
 }
 
-.docs-about {}
+.text {
+    /* width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(10),
+        cursor .4s step-end infinite alternate; */
+}
+
+.docs-usage h4 {
+    font-size: x-large;
+}
+
+.first-block-span {
+    text-decoration: underline;
+    color: #007fc8;
+}
+
+.usage-abs-right {
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    z-index: 999999;
+    width: 440px;
+}
+
+.usage-abs-down {
+    width: 510px;
+    position: absolute;
+    top: 480px;
+    left: 20px;
+}
+
+.docs-about {
+    width: 777px;
+    border-radius: 65px;
+    border: 4px solid #FFF;
+    height: 959px;
+}
+
+.water-text-title {
+    width: 209px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 106px;
+    flex-shrink: 0;
+    border-radius: 45px 0px 45px 0px;
+    border: 4px solid #FFF;
+    border-top: 0px;
+    color: #FFF;
+    font-size: 48px;
+    letter-spacing: -2.4px;
+}
