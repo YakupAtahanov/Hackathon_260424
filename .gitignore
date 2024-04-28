@@ -73,6 +73,7 @@ cover/
 
 # Django stuff:
 __init__.py
+migrations/
 
 # Flask stuff:
 instance/
