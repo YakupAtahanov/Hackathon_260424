@@ -1,4 +1,4 @@
-from rest_framework.generics import ListAPIView, CreateAPIView
+from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveAPIView
 from main.models import Framework, Method, Class, Variables
 from main.api.serializers import FrameworkSerializer, MethodSerializer, ClassSerializer, VariablesSerializer
 
@@ -10,7 +10,7 @@ class FrameworkListAPIView(ListAPIView):
     serializer_class = FrameworkSerializer
 
 # Framework Detail API View
-class FrameworkDetailAPIView(ListAPIView):
+class FrameworkDetailAPIView(RetrieveAPIView):
     queryset = Framework.objects.all()
     serializer_class = FrameworkSerializer
 
@@ -26,7 +26,7 @@ class MethodListAPIView(ListAPIView):
     serializer_class = MethodSerializer
 
 # Method Detail API View
-class MethodDetailAPIView(ListAPIView):
+class MethodDetailAPIView(RetrieveAPIView):
     queryset = Method.objects.all()
     serializer_class = MethodSerializer
 
@@ -42,7 +42,7 @@ class ClassListAPIView(ListAPIView):
     serializer_class = ClassSerializer
 
 # Class Detail API View
-class ClassDetailAPIView(ListAPIView):
+class ClassDetailAPIView(RetrieveAPIView):
     queryset = Class.objects.all()
     serializer_class = ClassSerializer
 
@@ -58,7 +58,7 @@ class VariablesListAPIView(ListAPIView):
     serializer_class = VariablesSerializer
 
 # Variables Detail API View
-class VariablesDetailAPIView(ListAPIView):
+class VariablesDetailAPIView(RetrieveAPIView):
     queryset = Variables.objects.all()
     serializer_class = VariablesSerializer
 

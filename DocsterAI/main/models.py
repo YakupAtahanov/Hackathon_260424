@@ -7,6 +7,9 @@ class Framework(models.Model):
     name = models.CharField(max_length=100, unique=True)
     description = models.TextField()
 
+    def __str__(self):
+        return self.name
+
 # Method model
 class Method(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -15,6 +18,9 @@ class Method(models.Model):
     framework = models.ForeignKey('Framework', on_delete=models.CASCADE, related_name='methods', to_field='name')
     parent_method = models.ForeignKey('self', on_delete=models.CASCADE, blank=True, null=True)
 
+    def __str__(self):
+        return self.name
+
 # Class model
 class Class(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -22,6 +28,9 @@ class Class(models.Model):
     example_snippet = models.TextField()
     framework = models.ForeignKey('Framework', on_delete=models.CASCADE, related_name='classes', to_field='name')
     methods = models.ForeignKey('Method', on_delete=models.CASCADE, blank=True, null=True)
+    
+    def __str__(self):
+        return self.name
 
 # Variables model
 class Variables(models.Model):
@@ -29,3 +38,6 @@ class Variables(models.Model):
     description = models.TextField()
     example_snippet = models.TextField()
     framework = models.ForeignKey('Framework', on_delete=models.CASCADE, related_name='variables', to_field='name')
+    
+    def __str__(self):
+        return self.name
